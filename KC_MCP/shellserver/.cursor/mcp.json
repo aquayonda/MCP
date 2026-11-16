@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "shellserver": {
+      "command": "C:\\Users\\thetkc\\.local\\bin\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\thetkc\\Desktop\\MCP\\KC_MCP\\shellserver",
+        "server.py"
+      ]
+    },
+    "shellserver-docker": {
+      "command": "wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu-24.04",
+        "--",
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "shellserver-app:latest"
+      ]
+    }
+  }
+}
